@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "openfarm-1233",
+  "private_key_id": "47fbb7e5691914723b44f8743e6a0871b4ca1b40",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC53kaE24AoAsJS\nIUfNNOmoDthF5zySaBni3Nhv3CKQXFxHpxXZBDP21Fy21h+90jra5VIBdDrASw9K\nH/yyeJjemRjngNAaoXZkuFg/nOHCC2bmSW83RdGeYdXX905LceyVCDqD0njdDUJO\ni+t3JdfOpABzEpEeLM6Xa4ij5jnH2bn18ArhBuMemdQ/TWW7EvePzWiDiApnglBt\nofI3WfxfxpxuNzLgXmIQJ9Lj9syucevnMkSGobWWe94ZJrYtvk6feDnQhvTaBwF5\njnawgmlL0B8CZASfkcG+BKHRST8DOAR6gA9s4zWXj75EUSBOZ0eQ54j380iLuCHW\n/YT77T6DAgMBAAECggEAAT36pegGKuprvEy0J2kWLoP8z+AFI5Jv+QVroSLpyBS1\nYMAaKyvlkhtuGWR9sKPZigMWGljeDOK38MihmFbEqyzXpAFhkzINyyYsgRPpNnRP\nmpeLPyw+uMAisgTiJDONAr8OrQzYgkXOGbx76i2uqrpn/ASbKPjpaGM6cYlEKYQc\nS99n+mHqVBB965iG6DJOFJmxIxP2EGBLSVx55PtzzdXTxZ9ZgB5hbUdY5odIK5Ys\npoPx8+WY3Jlp8CGKcsAiYexndwS2nDFkora07Lc0757/f1KUVuV3s4W+hdBkF0dT\nvNh3R6HlDRr3MO2uSTLlLePik/XB9JoOgn5HIrZWmQKBgQDdxRFzhgkCOH90aRKZ\n/WwrtnK55V+uPdsubcFbG0su4GmZ/3/obONEgY+28gC9SC6Xb859JDmxzCdt+fz+\nYXImRfbd32GTJOcas2waZVY8QOV4ogLsWQHmtGFigol6Jau2Aw4Nf2aUS82GHy39\n0o39DY4n4wvcqxvCJufMamVKZwKBgQDWjptl6mcZm/Qq79QHhgnXeU2nVb2XhrRz\nkgFQqKoG+anAODQvfbBZzPKLcIjKLitTqPfAdmbtKVMi42xWVdLC8652dkW1Brvj\nKgIUomk67g01YGUU6eWsOKm7M7rtOq+cMAPIQ8C4X9gjCxcOlGTAG2hsj2/iyeNW\nhJd1rUVRhQKBgQC/mjnfo5g48PM9cmJ95PQGOFWawtANzKeHz4/U1Rn54C2cvaCX\nASzBzWaLWz7ESo7mi9TNTfUC5i3S2L96UFq9Mol9XDgDV0jMSuRFUfRVjoQz21XH\nOYdo+cOBxuJcRBu835rOkpnf2jYxgNLNj5LZZVLCp2liN/t9nPt8IxhsVQKBgHWC\nyY26Ihmels5laCVuvjkrkOJTTXGOL4sUrm+00NrdJqHGpp5UIqAsZbMFQYYqX0SE\nyJy6vIisF4KGOLHYc4Se3jC3elo5g/JY8abHhQbnlohjcTlRGZ+HsT58iKahe8j5\nazjmEslohQI8crZjhALLgBflP4xgsoiSOjoTWmHZAoGARlRWE0p2i8JeqVqxVJFS\n7zsZVF6BMaDAbr/mJC/fVCZ1TLCbZtTAKx0NXmfy7Sb0KlB/2zLEc2DAj/SKl8JJ\nURZjflPDSf/hYOekSRqnib9VAm5jHvoKnofcHyUoo81EnwtbuQBWpsy9zYDtQYam\nqqzO1GaBzXTgjOeX1ZlcuLg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "openfarm-1233@appspot.gserviceaccount.com",
+  "client_id": "",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/openfarm-1233%40appspot.gserviceaccount.com"
+}

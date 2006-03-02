@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crime Prediction System | Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/static/js/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="/static/js/vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Custom Font Icons CSS-->
+    <link rel="stylesheet" href="/static/css/font.css">
+    <!-- Google fonts - Muli-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/static/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <header class="header">   
+      <nav class="navbar navbar-expand-lg">
+        <div class="search-panel">
+          <div class="search-inner d-flex align-items-center justify-content-center">
+            <div class="close-btn">Close <i class="fa fa-close"></i></div>
+            <form id="searchForm" action="#">
+              <div class="form-group">
+                <input type="search" name="search" placeholder="What are you searching for...">
+                <button type="submit" class="submit">Search</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+          <div class="navbar-header">
+            <!-- Navbar Header--><a href="index.html" class="navbar-brand">
+              <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">CPS</strong><strong>Admin</strong></div>
+              <div class="brand-text brand-sm"><strong class="text-primary">CP</strong><strong>S</strong></div></a>
+            <!-- Sidebar Toggle Btn-->
+            <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
+          </div>
+
+       
+            <div class="list-inline-item logout">                   <a id="logout" href="/" class="nav-link"> <span class="d-none d-sm-inline">Logout </span><i class="icon-logout"></i></a></div>
+          </div>
+
+
+        </div>
+      </nav>
+    </header>
+    <div class="d-flex align-items-stretch">
+      <!-- Sidebar Navigation-->
+      <nav id="sidebar">
+        <!-- Sidebar Header-->
+        <div class="sidebar-header d-flex align-items-center">
+          <div class="avatar"><img src="img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle"></div>
+          <div class="title">
+            <h1 class="h5">Mark Stephen</h1>
+            <p>Admin</p>
+          </div>
+        </div>
+        <!-- Sidebar Navidation Menus--><span class="heading">Main</span>
+        <ul class="list-unstyled">
+          <li class="active"><a href="/dashboard"> <i class="icon-home"></i>Dashboard </a></li>
+          <li><a href="#crimeDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Manage Crime </a>
+            <ul id="crimeDropdown" class="collapse list-unstyled ">
+                 <li><a href="/crime_form">Crime Form</a></li>
+              <li><a href="/crime_table">Crime View</a></li>
+            </ul>
+          </li>
+          <li><a href="#modelDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Model</a>
+            <ul id="modelDropdown" class="collapse list-unstyled ">
+             <li><a href="/model_arima">ARIMA</a></li>
+              <li><a href="/model_mlp">MLP</a></li>
+              <li><a href="model_ann">ANN</a></li>
+            </ul>
+          </li>
+          <li><a href="#analyticsDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Data Analytics</a>
+            <ul id="analyticsDropdown" class="collapse list-unstyled ">
+             <li><a href="/analytics_arima">ARIMA</a></li>
+              <li><a href="/analytics_mlp">MLP</a></li>
+              <li><a href="analytics_ann">ANN</a></li>
+            </ul>
+          </li>
+          <li><a href="#analyticsDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Data Analytics</a>
+            <ul id="analyticsDropdown" class="collapse list-unstyled ">
+             <li><a href="/analytics_arima">ARIMA</a></li>
+              <li><a href="/analytics_mlp">MLP</a></li>
+              <li><a href="/analytics_ann">ANN</a></li>
+            </ul>
+          </li>
+          <li class="active"><a href="/report"> <i class="icon-home"></i>Statistics </a></li>
+        </ul>
+      </nav>
+      <!-- Sidebar Navigation end-->
+      <div class="page-content">
+        <div class="page-header">
+          <div class="container-fluid">
+            <h2 class="h5 no-margin-bottom">Dashboard</h2>
+          </div>
+        </div>
+        <section class="no-padding-top no-padding-bottom">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3 col-sm-6">
+                <div class="statistic-block block">
+                  <div class="progress-details d-flex align-items-end justify-content-between">
+                    <div class="title">
+                      <div class="icon"><i class="icon-user-1"></i></div><strong>New Clients</strong>
+                    </div>
+                    <div class="number dashtext-1">27</div>
+                  </div>
+                  <div class="progress progress-template">
+                    <div role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template dashbg-1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="statistic-block block">
+                  <div class="progress-details d-flex align-items-end justify-content-between">
+                    <div class="title">
+                      <div class="icon"><i class="icon-contract"></i></div><strong>New Projects</strong>
+                    </div>
+                    <div class="number dashtext-2">375</div>
+                  </div>
+                  <div class="progress progress-template">
+                    <div role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template dashbg-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="statistic-block block">
+                  <div class="progress-details d-flex align-items-end justify-content-between">
+                    <div class="title">
+                      <div class="icon"><i class="icon-paper-and-pencil"></i></div><strong>New Invoices</strong>
+                    </div>
+                    <div class="number dashtext-3">140</div>
+                  </div>
+                  <div class="progress progress-template">
+                    <div role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template dashbg-3"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="statistic-block block">
+                  <div class="progress-details d-flex align-items-end justify-content-between">
+                    <div class="title">
+                      <div class="icon"><i class="icon-writing-whiteboard"></i></div><strong>All Projects</strong>
+                    </div>
+                    <div class="number dashtext-4">41</div>
+                  </div>
+                  <div class="progress progress-template">
+                    <div role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template dashbg-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="no-padding-bottom">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="bar-chart block no-margin-bottom">
+                  <canvas id="barChartExample1"></canvas>
+                </div>
+                <div class="bar-chart block">
+                  <canvas id="barChartExample2"></canvas>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="line-cahrt block">
+                  <canvas id="lineCahrt"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="no-padding-bottom">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="stats-2-block block d-flex">
+                  <div class="stats-2 d-flex">
+                    <div class="stats-2-arrow low"><i class="fa fa-caret-down"></i></div>
+                    <div class="stats-2-content"><strong class="d-block">5.657</strong><span class="d-block">Standard Scans</span>
+                      <div class="progress progress-template progress-small">
+                        <div role="progressbar" style="width: 60%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stats-2 d-flex">
+                    <div class="stats-2-arrow height"><i class="fa fa-caret-up"></i></div>
+                    <div class="stats-2-content"><strong class="d-block">3.1459</strong><span class="d-block">Team Scans</span>
+                      <div class="progress progress-template progress-small">
+                        <div role="progressbar" style="width: 35%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-3"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="stats-3-block block d-flex">
+                  <div class="stats-3"><strong class="d-block">745</strong><span class="d-block">Total requests</span>
+                    <div class="progress progress-template progress-small">
+                      <div role="progressbar" style="width: 35%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template progress-bar-small dashbg-1"></div>
+                    </div>
+                  </div>
+                  <div class="stats-3 d-flex justify-content-between text-center">
+                    <div class="item"><strong class="d-block strong-sm">4.124</strong><span class="d-block span-sm">Threats</span>
+                      <div class="line"></div><small>+246</small>
+                    </div>
+                    <div class="item"><strong class="d-block strong-sm">2.147</strong><span class="d-block span-sm">Neutral</span>
+                      <div class="line"></div><small>+416</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="drills-chart block">
+                  <canvas id="lineChart1"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+       
+       
+         
+        
+        <footer class="footer">
+          <div class="footer__block block no-margin-bottom">
+            <div class="container-fluid text-center">
+              <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+            
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="/static/js/vendor/jquery/jquery.min.js"></script>
+    <script src="/static/js/vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="/static/js/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/js/vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="/static/js/vendor/chart.js/Chart.min.js"></script>
+    <script src="/static/js/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script src="/static/js/charts-home.js"></script>
+    <script src="/static/js/front.js"></script>
+  </body>
+</html>
